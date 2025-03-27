@@ -8,7 +8,8 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description }) => {
   const photos = useUnsplashPhotos(title);
-  const imageUrl = photos[0]?.url || "https://via.placeholder.com/400x300";
+  const imageUrl =
+    photos[0]?.url || "https://placehold.co/400?text=image placeholder";
 
   return (
     <div className={styles.container}>

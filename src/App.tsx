@@ -5,7 +5,7 @@ import data from "./db/data.json";
 
 function App() {
   return (
-    <div>
+    <div className="carousel-wrapper">
       <Carousel>
         {data.map(({ title, description, id }) => {
           return <Card key={id} title={title} description={description} />;

@@ -6,7 +6,6 @@
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
   padding: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -22,8 +21,9 @@
 }
 
 .textWrapper img {
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 10;
   border-radius: 8px;
 }
 
