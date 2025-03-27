@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.textWrapper {
+  text-align: center;
+}
+
+.textWrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.textWrapper h1 {
+  font-size: 20px;
+  margin: 12px 0;
+  color: #333;
+}
+
+.textWrapper p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
