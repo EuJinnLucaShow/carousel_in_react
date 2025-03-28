@@ -6,26 +6,14 @@
 
 .slides {
   display: flex;
-  gap: 10px;
   justify-content: flex-start;
+  margin: 10px;
+  gap: 10px;
   transition: transform 0.5s ease;
 }
 
 .slide {
-  flex: 0 0 25%;
-  margin: 5px;
-}
-
-@media (max-width: 1024px) {
-  .slide {
-    flex: 0 0 20%;
-  }
-}
-
-@media (max-width: 768px) {
-  .slide {
-    flex: 0 0 15%;
-  }
+  width: auto;
 }
 
 .buttonWrapper {
@@ -34,20 +22,17 @@
 }
 
 .button {
-  background-color: #0d2b85ad;
-  border-radius: 8px;
-  color: white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+}
 
-  &:hover {
-    background-color: #0d2b85d2;
-  }
-
-  &:focus {
-    outline: none;
-  }
+.icons {
+  width: 33px;
+  height: 33px;
 }

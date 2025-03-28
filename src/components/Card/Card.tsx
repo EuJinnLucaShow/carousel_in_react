@@ -13,11 +13,9 @@ const Card: React.FC<CardProps> = ({ title, description }) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.textWrapper}>
-        <img src={imageUrl} alt={title} />
-        <h1>{title}</h1>
-        <p>{description}</p>
-      </div>
+      <img src={imageUrl} alt={title} className={styles.images} />
+      <h1 className={styles.title}>{title}</h1>
+      <p className={styles.description}>{description}</p>
     </div>
   );
 };
